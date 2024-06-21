@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/edit_photo.js" type="module"></script>
+    <script src="js/header.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html"><i class="fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i>
+        </a>
+        <div class="title-block">
+            <h2 id="page-title">Upload a New Photo</i>
+            </h2>
+            <h3 id="subtitle">Photo Gallery <i class="fa fa-star" aria-hidden="true"></i></h3>
+        </div>
+
+        <form id="form-photo-upload">
+            <div class="row pt-2 mt-3">
+                <div class="col-12 col-md-6 offset-md-3 ">
+                    <form id="form-photo-upload">
+                        <div class="form-group mb-3">
+                            <label for="input-url">URL:</label>
+                            <input required type="text" class="form-control" id="input-url" name="url"
+                                placeholder="Photo URL">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="input-title">Title:</label>
+                            <input required type="text" class="form-control" id="input-title" name="title"
+                                placeholder="Title">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="input-description">Description:</label>
+                            <textarea class="form-control" id="input-description" name="description"
+                                placeholder="Describe your image..." rows="4"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="input-visibility">Visibility:</label>
+                            <select required class="form-control" id="input-visibility" name="visibility">
+                                <option value="Public">Public</option>
+                                <option value="Private">Private</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-md text-center my-3">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <footer id="footer-block">
+    </footer>
+    </div>
+    <script>
+        include("footer.html", "#footer-block");
+    </script>
+</body>
+
+</html>

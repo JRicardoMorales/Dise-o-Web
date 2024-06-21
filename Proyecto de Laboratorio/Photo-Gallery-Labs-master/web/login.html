@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>login</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="/js/utils/include.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <script src="/js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/axios.min.js"></script>
+  <script src="js/header.js" type="module"></script>
+  <script src="js/login.js" type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html"><i class="fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i>
+    </a>
+    <div class="title-block">
+      <h2 id="title">Login</i>
+      </h2>
+      <h3 id="subtitle">Photo Gallery <i class="fa fa-star" aria-hidden="true"></i></h3>
+    </div>
+
+    <form id="login-form">
+      <div class="row pt-2 mt-3 ">
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="mb-3">
+            <label for="username-input" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username-input" name="username" placeholder="Username" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="mb-3">
+            <label for="password-input" class="form-label">Password</label>
+            <input type="password" id="password-input" class="form-control" aria-describedby="passwordHelpBlock"
+              placeholder="Password" name="password" required>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary" id="btn-login">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer id="footer-block">
+    </footer>
+  </div>
+  <script>
+    include("footer.html", "#footer-block");
+  </script>
+</body>
+
+</html>
