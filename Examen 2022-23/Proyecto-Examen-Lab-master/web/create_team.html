@@ -1,0 +1,75 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/utils/include.js"></script>
+
+    <script src="js/header.js" type="module"></script>
+    <script src="js/createTeam.js" type="module"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Examen IISSI-2</title>
+</head>
+
+<body>
+    <div id="page-header"></div>
+
+    <div class="container">
+        <div id="errors"></div>
+        <h3 class="text-center">Visualización</h3>
+        <p class="display-6">Sustituir este contenido por la visualización solicitada en el enunciado ...</p>
+
+        <!-- Sustituir el contenido de content por la visualización solicitada en el enunciado -->
+        <div id ="content" class="ratio ratio-16x9">
+            <form id="team-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                    placeholder="Nombre del team" required>
+                </div>
+                <div class="form-group">
+                    <label for="president">Presidente:</label>
+                    <input type="text" class="form-control" id="president" name="president"
+                    placeholder="Presidente" required>
+                </div>
+                <div class="row">
+                    <div class = col-md-6>
+                        <label for="foundationDate">Fecha de fundación:</label>
+                        <input type="date" class="form-control" id="foundationDate" name="foundationDate" required>
+                    </div>
+                    <div class = col-md-6>
+                        <label for="fieldCapacity">Field Capacity:</label>
+                        <input type="number" min="100" max="200000" class="form-control" id="fieldCapacity" name="fieldCapacity" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="photoURL">Imagen:</label>
+                    <input type="text" class="form-control" id="photoURL" name="photoURL"
+                    placeholder="URL de la imagen" required>
+                </div>
+                
+                <div class="row" id ="btnrow">
+                    <div class = col-md-2 id="btncol">
+                        <button type="submit" class="btn btn-primary" id="teambtn">Submit</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+   
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+</body>
+
+</html>
