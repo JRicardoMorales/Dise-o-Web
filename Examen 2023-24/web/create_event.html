@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/utils/include.js"></script>
+
+        <script src="js/header.js" type="module"></script>
+        <script src="js/create_event.js" type="module"></script>
+
+        <title>Examen IISSI-2</title>
+    </head>
+    <body>
+        <div id="page-header"></div>
+        <div class="container">
+            <div id="errors"></div>
+            <h3 class="text-center" id="text-center">Creado de Evento</h3>
+            <hr>
+            <div class="row">
+                <form id="newEvent-form" class="col">
+                    <div class="col-md mb-3">
+                        <label for="name-input">Nombre:</label>
+                        <input type="text" class="form-control" id="name-input" name="name" required>
+                    </div>
+
+                    <div class="col-md mb-3">
+                        <label for="eventDate-input">Fecha:</label>
+                        <input type="date" class="form-control" id="eventDate-input" name="eventDate" required>
+                    </div>
+
+                    <div class="col-md mb-3">
+                        <label for="description-input">Número máximo de participantes:</label>
+                        <input type="number" class="form-control" id="maxParticipants-input" name="maxParticipants" required>
+                    </div>
+
+                    <div class="col-md mb-3">
+                        <label for="prize-input">Lugar del evento:</label>
+                        <input type="text" class="form-control" id="place-input" name="place" required>
+                    </div>
+
+                    <div class="col-md mb-3">
+                        <label for="imageUrl-input">Imagen (url):</label>
+                        <input type="text" class="form-control" id="imageUrl-input" name="imageUrl" required>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            include("header.html", "#page-header");
+        </script>
+    </body>
+</html>
